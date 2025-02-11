@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Amidic';
+    src: url('Amidic-Regular.eot');
+    src: local('Amidic Regular'), local('Amidic-Regular'),
+        url('Amidic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Amidic-Regular.woff2') format('woff2'),
+        url('Amidic-Regular.woff') format('woff'),
+        url('Amidic-Regular.ttf') format('truetype'),
+        url('Amidic-Regular.svg#Amidic-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
