@@ -1,34 +1,50 @@
 body {
+    display: flex;
     margin: 0;
     background-color: black;
-  }
-  
-  .container {
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+   
+}
+
+.container {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .container-1 {
+    margin: 0;
+}
+
+.container-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
     background-color: black;
-    margin-top: -70px;
-  }
-  
-  /* Navbar Styles */
-  .navbar {
+    margin-top: 20px;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+/* Navbar Styles */
+.navbar {
     display: flex;
     justify-content: space-between;
     background-color: transparent;
     padding: 10px 20px;
     position: relative;
-  }
+}
 
-  .image img {
+.image img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -38,25 +54,25 @@ body {
     height: auto;
     z-index: 1;
     opacity: 0.4;
-  }
+}
 
-  .logo {
+.logo {
     color: rgb(221, 194, 150);
     font-size: 24px;
     font-weight: bold;
     font-family: 'Amidic', sans-serif;
     font-weight: 100;
     font-size: large;
-  }
-  
-  .text-1 {
+}
+
+.text-1 {
     color: white;
     font-size: 40px;
     font-family: 'Amidic', sans-serif;
     font-weight: 100;
-  }
-  
-  .text-2 {
+}
+
+.text-2 {
     color: rgb(221, 194, 150);
     font-size: 70px;
     font-weight: bold;
@@ -64,316 +80,180 @@ body {
     font-weight: 900px;
     letter-spacing: 60px;
     opacity: 1;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
     margin: 0;
     padding: 0;
-  }
-  
-  .nav-links li a {
+}
+
+.nav-links li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
     transition: color 0.3s;
     font-family: 'Amidic', sans-serif;
     font-size: small;
-  }
-  
-  .nav-links li a:hover {
+}
+
+.nav-links li a:hover {
     color: #00bcd4;
-  }
-  
-  /* Toggle Button (Hamburger Menu) */
-  .toggle-checkbox {
+}
+
+.toggle-checkbox {
     display: none;
-  }
-  
-  .toggle-label {
+}
+
+.toggle-label {
     display: none;
     background: none;
     color: white;
     font-size: 24px;
     cursor: pointer;
-  }
+}
 
- 
-  /* buttons */
 
-.box-3 { 
-    content: flex;
-    background-color: transparent; 
+/* buttons */
+
+.box-3, .box-2, .box-4{
+    background-color: transparent;
     font-family: 'Amidic', sans-serif;
     text-align: center;
+    margin-right: auto; 
     margin-top: 100px;
-   } 
+}
 
-  
-  .btn2 {
+.btn, .btn3, .btn2 {
     line-height: 45px;
     height: 45px;
-    justify-content: center;
     width: 275px;
     cursor: pointer;
-    font-size: 20px;
-    color: rgb(221, 194, 150)
+    text-align: center;
+}
 
-  }
-
-  .btn-three:hover {
+.btn-four:hover, .btn-two:hover, .btn-three:hover {
     color: #FFF;
-  }
+    
 
+}
 
-  .btn-three {
+.btn-three, .btn-two, .btn-four {
     color: #FFF;
     transition: all 0.5s;
-    position: relative; 
+    position: relative;
     font-size: 20px;
-   
-  }
+    z-index: 100;
 
-  .btn-three:before {
+}
+
+.btn-three:before, .btn:before, .btn-four:before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: -1;
     transition: all 0.5s;
-    border: 2px solid rgb(39, 35, 35);
-    background-color: transparent;
-  }
-  .btn-three:after {
+    border: 2px solid black;
+    background-color: rgb(221, 194, 150);
+    opacity: 10%;
+}
+
+.btn-three:after, .btn:after, .btn-four:after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: -1;
     transition: all 0.5s;
     border: 2px solid black;
     background-color: transparent;
-  }
-  .btn-three:hover::before {
+}
+
+.btn-three:hover::before, .btn-two:hover::before, .btn-four:hover::before {
     transform: rotate(-45deg);
     background-color: transparent;
-  }
-  .btn-three:hover::after {
+}
+
+.btn-three:hover::after, .btn-two:hover::after, .btn-four:hover::after {
     transform: rotate(45deg);
     background-color: transparent;
-  }
-  
-  
-  .box-2 { 
-    content: flex;
-    background-color: transparent; 
-    font-family: 'Amidic', sans-serif;
-    text-align: center;
-    margin-right: auto;
-    margin-top: 100px;
-   } 
+}
 
-  
-  .btn {
-    line-height: 45px;
-    height: 45px;
-    justify-content: center;
-    width: 275px;
-    cursor: pointer;
-    font-size: 20px;
-    color: rgb(221, 194, 150)
-
-  }
-
-  .btn-two:hover {
-    color: #FFF;
-  }
-
-
-  .btn-two {
-    color: #FFF;
-    transition: all 0.5s;
-    position: relative; 
-    font-size: 20px;
-   
-  }
-
-  .btn-two::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    transition: all 0.5s;
-    border: 2px solid rgb(39, 35, 35);
-    background-color: transparent;
-  }
-  .btn-two::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    transition: all 0.5s;
-    border: 2px solid black;
-    background-color: transparent;
-  }
-  .btn-two:hover::before {
-    transform: rotate(-45deg);
-    background-color: transparent;
-  }
-  .btn-two:hover::after {
-    transform: rotate(45deg);
-    background-color: transparent;
-  }
-
-  
-  /* Font Face */
-  @font-face {
+/* Font Face */
+@font-face {
     font-family: 'Amidic';
     src: url('./amidic-modern-san-serif-typeface-webfont-2023-11-27-05-16-44-utc/Amidic-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
-  
-  /* Responsive Styles */
-  
-  /* Tablet Styles (max-width: 768px) */
-  @media (max-width: 768px) {
+}
+
+/* Responsive Styles */
+
+/* Tablet Styles (max-width: 768px) */
+@media (max-width: 768px) {
     .toggle-label {
-      display: block;
+        display: block;
     }
-  
+
     .nav-links {
-      display: none;
-      flex-direction: column;
-      background-color: #333;
-      position: absolute;
-      top: 50px;
-      right: 20px;
-      width: 200px;
-      border-radius: 5px;
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 200px;
+        border-radius: 5px;
     }
-  
-    .toggle-checkbox:checked + .toggle-label + .nav-links {
-      display: flex;
+
+    .toggle-checkbox:checked+.toggle-label+.nav-links {
+        display: flex;
     }
-  
+
     .nav-links li {
-      text-align: center;
-      padding: 10px 0;
+        text-align: center;
+        padding: 10px 0;
     }
-  
+
     .nav-links li a {
-      font-size: 16px;
+        font-size: 16px;
     }
-  
+
     .text-1 {
-      font-size: 20px;
-      letter-spacing: 1px;
+        font-size: 20px;
+        letter-spacing: 1px;
     }
-  
+
     .text-2 {
-      font-size: 50px;
-      letter-spacing: 20px;
+        font-size: 50px;
+        letter-spacing: 20px;
     }
-  }
-  
-  /* Mobile Styles (max-width: 480px) */
-  @media (max-width: 480px) {
+}
+
+/* Mobile Styles (max-width: 480px) */
+@media (max-width: 480px) {
     .text-1 {
-      font-size: 18px;
-      letter-spacing: 1px;
+        font-size: 18px;
+        letter-spacing: 1px;
     }
-  
+
     .text-2 {
-      font-size: 32px;
-      letter-spacing: 3px;
+        font-size: 32px;
+        letter-spacing: 3px;
     }
-  
+
     .container-1 {
-      width: auto;
+        width: auto;
     }
-  
+
     .nav-links li a {
-      font-size: 14px;
+        font-size: 14px;
     }
-  }
-
-
-  .box-4 { 
-    content: flex;
-    background-color: transparent; 
-    font-family: 'Amidic', sans-serif;
-    text-align: center;
-    margin-right: auto;
-    margin-top: 100px;
-   } 
-
-  
-  .btn3 {
-    line-height: 45px;
-    height: 45px;
-    justify-content: center;
-    width: 275px;
-    cursor: pointer;
-    font-size: 20px;
-    color: rgb(221, 194, 150)
-
-  }
-
-  .btn-four:hover {
-    color: #FFF;
-  }
-
-
-  .btn-four {
-    color: #FFF;
-    transition: all 0.5s;
-    position: relative; 
-    font-size: 20px;
-   
-  }
-
-  .btn-four:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transition: all 0.5s;
-    border: 2px solid black;
-    background-color: transparent;
-  }
-  .btn-four:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transition: all 0.5s;
-    border: 2px solid black;
-    background-color: transparent;
-  }
-  .btn-four:hover::before {
-    transform: rotate(-45deg);
-    background-color: transparent;
-  }
-  .btn-four:hover::after {
-    transform: rotate(45deg);
-    background-color: transparent;
-  }
+}
